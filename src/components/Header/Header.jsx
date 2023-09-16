@@ -1,4 +1,4 @@
-import profile from '../assets/profile.png'
+import profile from '../../assets/profile.png'
 const Header = () => {
     return (
         <div className='container mx-auto flex items-center justify-between p-5 border-b-2  '>
