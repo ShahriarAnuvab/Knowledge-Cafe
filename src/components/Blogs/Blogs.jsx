@@ -4,7 +4,7 @@ const Blogs = ({ blogs, handleBookmarks}) => {
     // console.log(typeof(handleBookmarks))
   
   return (
-    <div className="container mx-auto w-9/12 shadow-2xl rounded-2xl p-5 my-5">
+    <div className="container mx-auto md:w-9/12 shadow-2xl rounded-2xl p-5 my-5">
       <div>
         <img src={blogs.cover} alt="" className="mx-auto" />
         <div className="flex justify-between items-center my-2 flex-col md:flex-row mx-5">

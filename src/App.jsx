@@ -24,7 +24,7 @@ const handleBookmarks = (blog) =>{
         Total Blogs:{" "}
         <span className="text-xl font-semibold">{blogs.length}</span>
       </h1>
-      <div className="flex flex-col md:flex-row justify-between">
+      <div className="flex flex-col lg:flex-row justify-between">
         <div>
           {blogs.map((blogs) => (
             <Blogs key={blogs.id} blogs={blogs} handleBookmarks ={handleBookmarks}  ></Blogs>
