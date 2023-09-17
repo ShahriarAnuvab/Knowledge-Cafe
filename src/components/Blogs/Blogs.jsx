@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import { FiBookmark } from "react-icons/fi";
-const Blogs = ({ blogs, handleBookmarks}) => {
+const Blogs = ({ blogs, handleBookmarks, markAsRead}) => {
     // console.log(typeof(handleBookmarks))
+    // console.log(blogs.reading_time)
   
   return (
     <div className="container mx-auto md:w-9/12 shadow-2xl rounded-2xl p-5 my-5">
@@ -31,14 +32,15 @@ const Blogs = ({ blogs, handleBookmarks}) => {
 
         </p>
         <h1 className="font-bold text-xl md:text-4xl my-2">{blogs.title}</h1>
-        <button className="text-[#6047EC] underline font-semibold">Mark as read</button>
+        <button className="text-[#6047EC] underline font-semibold" onClick={()=> markAsRead(blogs.reading_time, blogs.id)}>Mark as read</button>
       </div>
     </div>
   );
 };
 Blogs.propTypes = {
   blogs: PropTypes.object.isRequired,
-  handleBookmarks: PropTypes.func
+  handleBookmarks: PropTypes.func,
+  markAsRead: PropTypes.func
 };
 
 export default Blogs;

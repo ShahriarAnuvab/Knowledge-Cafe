@@ -3,12 +3,12 @@ import Cart from "../Cart/Cart";
 const Bookmark = ({bookmarks}) => {
     // console.log(typeof(bookmarks))
     return (
-        <div className="lg:w-3/12 border rounded-sm bg-slate-500 p-2 my-5">
+        <div className="border rounded-sm bg-slate-500 p-2 my-5">
             <h1 className="text-white text-center border-b-2">Bookmark: {bookmarks.length}</h1>
             
         <div className="">
             {
-             bookmarks.map(bookmark => <Cart key={bookmark.id} bookmark={bookmark}> time  </Cart>)
+             bookmarks.map(bookmark => <Cart key={bookmark.id} bookmark={bookmark}>   </Cart>)
             }
         </div>
         </div>
